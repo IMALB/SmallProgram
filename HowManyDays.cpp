@@ -22,7 +22,7 @@ int main()
     tm *ltm = localtime(&now);
 
     // 开始的日期,年，月，日
-    btm.year = 2018, btm.mon = 10, btm.day = 16;
+    btm.year = 2019, btm.mon = 10, btm.day = 16;
     // 现在的日期
     ntm.year = 1900 + ltm->tm_year;
     ntm.mon = 1 + ltm->tm_mon;
