@@ -100,12 +100,12 @@ bool isLegal(const Date & btm,  const Date & ntm)
     else {
         if (btm.mon == 2)
             mon_days[2] = isleap(btm.year) ? 29 : 28;
-        if (btm.day<1 || btm.day>mon_days[btm.year] )
+        if (btm.day<1 || btm.day>mon_days[btm.mon] )
             return false;
 
         if (ntm.mon == 2)
             mon_days[2] = isleap(ntm.year) ? 29 : 28;    
-        if (ntm.day<1 || ntm.day>mon_days[ntm.year])
+        if (ntm.day<1 || ntm.day>mon_days[ntm.mon])
             return false;
     }
 
